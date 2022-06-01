@@ -1,0 +1,4 @@
+Q-13. Write an SQL query to show only odd rows from a table.
+Ans:SELECT * FROM Worker WHERE MOD (WORKER_ID, 2) <> 0;
+Q-14. Write an SQL query to clone a new table from another table.
+Ans:SELECT * INTO WorkerClone FROM Worker;
