@@ -1,0 +1,81 @@
+1. What is the function of a summation junction of a neuron? What is threshold activation
+function?
+Ans: summation junction for the input signals is weighted by the respective synaptic weight. Because it is a linear combiner or adder of the weighted input signals, the output of the summation junction can be expressed as follows: y_{sum}=\sum_{i=1}^{n}w_ix_i
+
+2. What is a step function? What is the difference of step function with threshold function?
+Ans:A step function is a function like that used by the original Perceptron. The output is a certain value, A1, if the input sum is above a certain threshold and A0 if the input sum is below a certain threshold. The values used by the Perceptron were A1 = 1 and A0 = 0.
+
+3. Explain the McCulloch–Pitts model of neuron.
+Ans:A set of synapsesc (i.e connections) brings the activations from the other neurons.
+A processing unit sums the inputs, the applies the non-linear activation funcation (i.e threshold / transfer function).
+A output line transmit the result to other neurons.
+In other word, the input to a neuron arrives in the form of signals.The signals build up in the cell. Finally the cells fires(discharges) through the output. The cell can start building up signals again.
+Functions:
+The function y=f(X) describes a relationship , an input-ouput mapping rom x to y. threshold or sign function sgn(x) : define as threshold or sign sigmod : define as a smooth (differentiable) form of threshold function
+
+4. Explain the ADALINE network model.
+Ans:MADALINE. MADALINE (Many ADALINE) is a three-layer (input, hidden, output), fully connected, feed-forward artificial neural network architecture for classification that uses ADALINE units in its hidden and output layers, i.e. its activation function is the sign function. The three-layer network uses memistors
+
+5. What is the constraint of a simple perceptron? Why it may fail with a real-world data set?
+Ans:The output of a perceptron can only be a binary number (0 or 1) due to the hard limit transfer function. Perceptron can only be used to classify the linearly separable sets of input vectors. If input vectors are non-linear, it is not easy to classify them properly.
+
+6. What is linearly inseparable problem? What is the role of the hidden layer?
+Ans:Clearly not all decision problems are linearly separable: they cannot be solved using a linear decision boundary. Problems like these are termed linearly inseparable. XOR is a linearly inseparable problem.
+
+7. Explain XOR problem in case of a simple perceptron.
+Ans:The XOr problem is that we need to build a Neural Network (a perceptron in our case) to produce the truth table related to the XOr logical operator. This is a binary classification problem. Hence, supervised learning is a better way to solve it
+
+8. Design a multi-layer perceptron to implement A XOR B.
+Ans:The XOr problem is that we need to build a Neural Network (a perceptron in our case) to produce the truth table related to the XOr logical operator. This is a binary classification problem. Hence, supervised learning is a better way to solve it. In this case, we will be using perceptrons.
+
+9. Explain the single-layer feed forward architecture of ANN.
+Ans:In this type of network, we have only two layers input layer and output layer but the input layer does not count because no computation is performed in this layer. The output layer is formed when different weights are applied on input nodes and the cumulative effect per node is taken.
+
+10. Explain the competitive network architecture of ANN.
+Ans:A neural network consists of three layers. The first layer is the input layer. It contains the input neurons that send information to the hidden layer. The hidden layer performs the computations on input data and transfers the output to the output layer.
+
+11. Consider a multi-layer feed forward neural network. Enumerate and explain steps in the
+backpropagation algorithm used to train the network.
+Ans:Step – 1: Forward Propagation  Step – 2: Backward Propagation Step – 3: Putting all the values together and calculating the updated weight value
+
+
+12. What are the advantages and disadvantages of neural networks?
+Ans:
+Advantages: Problems in ANN are represented by attribute-value pairs.
+ANNs are used for problems having the target function, the output may be discrete-valued, real-valued, or a vector of several real or discrete-valued attributes.
+ANN learning methods are quite robust to noise in the training data. The training examples may contain errors, which do not affect the final output.
+It is used where the fast evaluation of the learned target function required.
+ANNs can bear long training times depending on factors such as the number of weights in the network, the number of training examples considered, and the settings of various learning algorithm parameters.
+Disadvantages:Hardware Dependence:
+Artificial Neural Networks require processors with parallel processing power, by their structure.
+For this reason, the realization of the equipment is dependent.
+Unexplained functioning of the network:
+This the most important problem of ANN.
+When ANN gives a probing solution, it does not give a clue as to why and how.
+This reduces trust in the network.
+Assurance of proper network structure:
+There is no specific rule for determining the structure of artificial neural networks.
+The appropriate network structure is achieved through experience and trial and error.
+The difficulty of showing the problem to the network:
+ANNs can work with numerical information.
+Problems have to be translated into numerical values before being introduced to ANN.
+The display mechanism to be determined will directly influence the performance of the network.
+This is dependent on the user's ability.
+The duration of the network is unknown:
+The network is reduced to a certain value of the error on the sample means that the training has been completed.
+The value does not give us optimum results.
+
+13. Write short notes on any two of the following:
+
+1. Biological neuron
+2. ReLU function
+3. Single-layer feed forward ANN
+4. Gradient descent
+5. Recurrent networks
+
+Ans:1)Gradient descent:  a)Gradient Descent is an algorithm that solves optimization problems using first-order iterations. Since it is designed to find the local minimum of a differential function, gradient descent is widely used in machine learning models to find the best parameters that minimize the model's cost function.
+
+b)Gradient descent will find different ones depending on our initial guess and our step size. If we choose x 0 = 6 x_0 = 6 x0=6x, start subscript, 0, end subscript, equals, 6 and α = 0.2 \alpha = 0.2 α=0. 2alpha, equals, 0, point, 2, for example, gradient descent moves as shown in the graph below.
+
+2)Recurrent networks:A recurrent neural network (RNN) is a special type of an artificial neural network adapted to work for time series data or data that involves sequences. Ordinary feed forward neural networks are only meant for data points, which are independent of each other.
+RNN converts the independent activations into dependent activations by providing the same weights and biases to all the layers, thus reducing the complexity of increasing parameters and memorizing each previous outputs by giving each output as input to the next hidden layer.
